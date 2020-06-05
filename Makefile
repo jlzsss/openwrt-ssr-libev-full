@@ -54,21 +54,21 @@ define Package/shadowsocksr-libev-gfwlist
   $(call Package/shadowsocksr-libev/Default)
   TITLE+= (OpenSSL)
   VARIANT:=openssl
-  DEPENDS:=+libopenssl +libpthread +libpcre +zlib +dnsmasq-full +ipset +dns-forwarder
+  DEPENDS:=+libopenssl +libpthread +libpcre +zlib +dnsmasq-full +ipset +dnsforwarder
 endef
 
 define Package/shadowsocksr-libev-gfwlist-polarssl
   $(call Package/shadowsocksr-libev/Default)
   TITLE+= (PolarSSL)
   VARIANT:=polarssl
-  DEPENDS:=+libpolarssl +libpthread +libpcre +dnsmasq-full +ipset +dns-forwarder
+  DEPENDS:=+libpolarssl +libpthread +libpcre +dnsmasq-full +ipset +dnsforwarder
 endef
 
 define Package/shadowsocksr-libev-gfwlist-mbedtls
   $(call Package/shadowsocksr-libev/Default)
   TITLE+= (mbedTLS)
   VARIANT:=mbedtls
-  DEPENDS:=+libmbedtls +libpthread +libpcre +dnsmasq-full +ipset +dns-forwarder
+  DEPENDS:=+libmbedtls +libpthread +libpcre +dnsmasq-full +ipset +dnsforwarder
 endef
 
 define Package/shadowsocksr-libev/description
